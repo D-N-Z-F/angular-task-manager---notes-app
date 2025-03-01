@@ -1,0 +1,16 @@
+@use "../colors";
+@use "../variables";
+
+.navbar {
+  background-color: colors.$primary;
+  height: variables.$navbarHeight;
+  display: flex;
+  align-items: center;
+  background-color: black;
+
+  .container {
+    color: white;
+    padding: 35px;
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,12 @@
+@use "colors";
+@use "variables";
+
+.page {
+  height: 100vh;
+
+  .main {
+    height: calc(100% - variables.$navbarHeight);
+    display: flex;
+    flex-direction: column;
+  }
+}
