@@ -1,0 +1,22 @@
+<div class="sidebar" [ngClass]="{ 'sidebar-collapsed': isSidebarCollapsed }">
+  <div class="sidebar-header">
+    <a
+      href="#"
+      class="sidebar-logo"
+      [ngClass]="{ 'sidebar-logo-expanded': !isSidebarCollapsed }"
+      >Task & Note Manager</a
+    >
+  </div>
+  <div class="sidebar-menu">
+    <ul>
+      <ng-container *ngFor="let item of menuItems">
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-item">
+            <i [class]="item.icon"></i>
+            <span class="sidebar-item-text">{{ item.label }}</span>
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>
