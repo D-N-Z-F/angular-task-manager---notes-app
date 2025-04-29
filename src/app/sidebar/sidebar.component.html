@@ -11,7 +11,7 @@
     <ul>
       <ng-container *ngFor="let item of menuItems">
         <li class="sidebar-menu-item">
-          <a href="#" class="sidebar-item">
+          <a [routerLink]="item.route" class="sidebar-item">
             <i [class]="item.icon"></i>
             <span class="sidebar-item-text">{{ item.label }}</span>
           </a>

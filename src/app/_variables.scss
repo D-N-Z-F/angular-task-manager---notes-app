@@ -1,3 +1,9 @@
-$sidebarCollapsedWidth: 50px;
-$sidebarExpandedWidth: 250px;
-$sidebarOffset: $sidebarExpandedWidth - $sidebarCollapsedWidth;
+$sidebarLgCollapsedWidth: 50px;
+$sidebarLgExpandedWidth: 250px;
+$sidebarLgExpandedOffset: $sidebarLgExpandedWidth - $sidebarLgCollapsedWidth;
+$sidebarLgCollapsedOffset: $sidebarLgExpandedOffset * 0.05;
+
+$sidebarMdCollapsedWidth: 37.5px;
+$sidebarMdExpandedWidth: 187.5px;
+$sidebarMdExpandedOffset: $sidebarMdExpandedWidth - $sidebarMdCollapsedWidth;
+$sidebarMdCollapsedOffset: $sidebarMdExpandedOffset * 0.05;

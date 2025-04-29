@@ -5,7 +5,7 @@
   background-color: colors.$base;
   color: colors.$text;
   height: 100vh;
-  width: variables.$sidebarExpandedWidth;
+  // width: variables.$sidebarLgExpandedWidth;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,7 +57,7 @@
   align-items: center;
   color: colors.$text;
   text-decoration: none;
-  padding: 0.75rem 1rem;
+  // padding: 0.75rem 1rem;
   transition: all 0.2s ease;
   cursor: pointer;
 
@@ -76,7 +76,7 @@
 }
 
 .sidebar-collapsed {
-  width: variables.$sidebarCollapsedWidth;
+  // width: variables.$sidebarLgCollapsedWidth;
 
   .sidebar-menu-item {
     position: static;
@@ -91,6 +91,44 @@
       opacity: 0;
       width: 0;
       overflow: hidden;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: variables.$sidebarLgExpandedWidth;
+
+    &-item {
+      padding: 0.75rem 1rem;
+    }
+
+    &-collapsed {
+      width: variables.$sidebarLgCollapsedWidth;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .sidebar {
+    width: variables.$sidebarMdExpandedWidth;
+
+    &-item {
+      padding: 0.75rem 0.65rem;
+    }
+
+    &-collapsed {
+      width: variables.$sidebarMdCollapsedWidth;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    width: 0;
+
+    &-collapsed {
+      width: 0;
     }
   }
 }

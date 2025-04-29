@@ -5,26 +5,15 @@
   height: 100%;
 }
 
-#dashboard {
-  background-color: darkgrey;
+.title {
+  background-color: colors.$base;
   height: 100%;
-  padding: calc(100% - (100% - 60px)) calc(100% - (100% - 40px));
+  padding: calc(100% - (100% - 30px)) calc(100% - (100% - 10px));
   display: flex;
   justify-content: center;
-}
+  border-radius: 12px;
 
-.content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
-.tasks-container {
-  width: 50%;
-  font-size: large;
-}
-
-.notes-container {
-  width: 50%;
-  font-size: large;
+  & h1 {
+    color: colors.$text;
+  }
 }

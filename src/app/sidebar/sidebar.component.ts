@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 interface MenuItem {
   icon: string;
   label: string;
-  link?: string;
+  route?: string;
 }
 
 @Component({
   selector: 'app-sidebar',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
@@ -20,10 +21,12 @@ export class SidebarComponent {
     {
       icon: 'fas fa-home',
       label: 'Dashboard',
+      route: '/dashboard',
     },
     {
       icon: 'fas fa-cog',
       label: 'Settings',
+      route: '/settings',
     },
     {
       icon: 'fas fa-envelope',
